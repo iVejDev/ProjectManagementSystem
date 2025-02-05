@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container mt-4">
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to Project Management System</h1>
+        <p class="lead">Manage your projects, customers, and services efficiently.</p>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projects</h5>
+                        <p class="card-text">Manage your project portfolio</p>
+                        <a asp-controller="Projects" asp-action="Index" class="btn btn-primary">View Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Customers</h5>
+                        <p class="card-text">Manage customer information</p>
+                        <a asp-controller="Customers" asp-action="Index" class="btn btn-primary">View Customers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Managers</h5>
+                        <p class="card-text">Manage project managers</p>
+                        <a asp-controller="ProjectManagers" asp-action="Index" class="btn btn-primary">View Managers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Services</h5>
+                        <p class="card-text">Manage service offerings</p>
+                        <a asp-controller="Services" asp-action="Index" class="btn btn-primary">View Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

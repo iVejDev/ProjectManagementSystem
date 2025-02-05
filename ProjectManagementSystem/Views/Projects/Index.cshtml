@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ProjectManagementSystem.ViewModels.ProjectViewModel>
+
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<div class="container mt-4">
+    <h2>Projects</h2>
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Create New Project</a>
+    </p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Project Number</th>
+                <th>Name</th>
+                <th>Customer</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ProjectNumber</td>
+                    <td>@item.Name</td>
+                    <td>@item.CustomerName</td>
+                    <td>@item.StartDate.ToShortDateString()</td>
+                    <td>@item.EndDate.ToShortDateString()</td>
+                    <td>@item.Status</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
