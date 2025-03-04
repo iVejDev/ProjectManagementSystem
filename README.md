@@ -7,7 +7,9 @@
 
 A comprehensive project management solution built with ASP.NET Core MVC that helps organizations efficiently manage projects, customers, team members, and services in one centralized system.
 
+## 👨‍💻 Developer Information
 
+This Project Management System was developed by Ilir, a first-year student at EC Education studying Web Development with .NET. It was created as part of the Data Storage course, demonstrating proficiency in modern web development techniques and best practices.
 
 ## 🌟 Key Features
 
@@ -105,7 +107,7 @@ ProjectManagementSystem/
 
 1. **Clone the repository**
    ```
-   git clone https://github.com/yourusername/ProjectManagementSystem.git
+   git clone https://github.com/iVejDev/ProjectManagementSystem.git
    cd ProjectManagementSystem
    ```
 
@@ -172,9 +174,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🔍 Implementation Notes
 
