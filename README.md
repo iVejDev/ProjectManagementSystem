@@ -7,7 +7,7 @@
 
 A comprehensive project management solution built with ASP.NET Core MVC that helps organizations efficiently manage projects, customers, team members, and services in one centralized system.
 
-![Project Management System Screenshot](https://via.placeholder.com/800x450?text=Project+Management+System)
+
 
 ## 🌟 Key Features
 
